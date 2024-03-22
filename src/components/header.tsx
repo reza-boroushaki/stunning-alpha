@@ -9,7 +9,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 
 const Header = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -28,15 +28,11 @@ const Header = ({ className }: { className?: string }) => {
         }`}
       >
         <div className="flex justify-between items-center py-4 px-2">
-          <a className="block w-[12rem] xl:mr-8" href="#hero">
+          <a className="block" href="#hero">
             <img src={brainwaveSymbol} width={40} height={40} alt="Brainwave" />
           </a>
 
-          <Button
-            className="ml-auto lg:hidden"
-            px="px-2"
-            onClick={toggleNavigation}
-          >
+          <Button className="lg:hidden" px="px-2" onClick={toggleNavigation}>
             <MenuSvg openNavigation={openNavigation} />
           </Button>
         </div>
