@@ -6,7 +6,7 @@ import Section from "./section";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="features" className="-mt-[6.25rem]">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
