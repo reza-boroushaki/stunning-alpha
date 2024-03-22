@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Benefits from "./components/benefits";
+import Collaboration from "./components/collaboration";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <Hero />
       <Benefits />
+      <Collaboration />
     </BrowserRouter>
   );
 }
