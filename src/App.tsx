@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Benefits from "./components/benefits";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
       </div>
       <Hero />
+      <Benefits />
     </BrowserRouter>
   );
 }
