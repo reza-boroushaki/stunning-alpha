@@ -1,6 +1,5 @@
 import { MouseEventHandler } from "react";
 import { cn } from "../../utils/cn";
-import ButtonSvg from "../assets/svg/ButtonSvg";
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -21,7 +20,6 @@ const Button = ({
   className,
   px,
   href,
-  white,
 }: ButtonProps) => {
   if (href) {
     return (

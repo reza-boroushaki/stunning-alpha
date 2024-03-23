@@ -8,7 +8,7 @@ import Button from "./button";
 import MenuSvg from "../assets/svg/MenuSvg";
 
 const Header = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null>(null);
+  const [_, setActive] = useState<string | null>(null);
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {

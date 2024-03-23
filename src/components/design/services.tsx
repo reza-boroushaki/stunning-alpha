@@ -1,4 +1,4 @@
-import { gradient, logo, logoWhite, play } from "../../assets";
+import { gradient, logo, play } from "../../assets";
 import ChatBubbleWing from "../../assets/svg/ChatBubbleWing";
 
 export const Gradient = () => {
