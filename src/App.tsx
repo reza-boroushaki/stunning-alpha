@@ -5,6 +5,7 @@ import Benefits from "./components/benefits";
 import Collaboration from "./components/collaboration";
 import Services from "./components/services";
 import Pricing from "./components/pricing";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Collaboration />
       <Services />
       <Pricing />
+      <Footer />
     </BrowserRouter>
   );
 }
