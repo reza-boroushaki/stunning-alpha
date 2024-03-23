@@ -8,7 +8,7 @@ const Pricing = () => {
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
         <Heading
-          tag="Get started with Brainwave"
+          tag="Get started with Stunning"
           title="Pay once, use forever"
         />
 

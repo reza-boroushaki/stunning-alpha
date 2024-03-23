@@ -1,7 +1,7 @@
 import { useState, Fragment } from "react";
 import { Menu, MenuItem } from "./navbar-menu";
 import { cn } from "../../utils/cn";
-import { brainwaveSymbol } from "../assets/";
+import { logo } from "../assets/";
 import { navigation } from "../constants";
 import { HamburgerMenu } from "./design/header";
 import Button from "./button";
@@ -29,7 +29,7 @@ const Header = ({ className }: { className?: string }) => {
       >
         <div className="flex justify-between items-center py-4 px-2">
           <a className="block" href="#hero">
-            <img src={brainwaveSymbol} width={40} height={40} alt="Brainwave" />
+            <img src={logo} width={40} height={40} alt="Stunning" />
           </a>
 
           <Button className="lg:hidden" px="px-2" onClick={toggleNavigation}>
@@ -72,7 +72,7 @@ const Header = ({ className }: { className?: string }) => {
               {index === 1 && (
                 <a href="#hero">
                   <div className="flex justify-center items-center">
-                    <img src={brainwaveSymbol} alt="logo" />
+                    <img src={logo} width={50} alt="logo" />
                   </div>
                 </a>
               )}
