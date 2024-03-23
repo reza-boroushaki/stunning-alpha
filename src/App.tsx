@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Benefits from "./components/benefits";
 import Collaboration from "./components/collaboration";
 import Services from "./components/services";
+import Pricing from "./components/pricing";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Benefits />
       <Collaboration />
       <Services />
+      <Pricing />
     </BrowserRouter>
   );
 }
