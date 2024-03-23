@@ -68,7 +68,12 @@ const Header = ({ className }: { className?: string }) => {
         <Menu setActive={setActive}>
           {navigation.map((nav, index) => (
             <Fragment key={nav.id}>
-              <MenuItem setActive={setActive} active={null} item={nav.title} />
+              <MenuItem
+                setActive={setActive}
+                active={null}
+                item={nav.title}
+                url={nav.url}
+              />
               {index === 1 && (
                 <a href="#hero">
                   <div className="flex justify-center items-center">

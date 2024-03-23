@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const transition = {
   type: "spring",
@@ -16,20 +16,26 @@ export const MenuItem = ({
   active,
   item,
   children,
+  url,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
+  url?: string;
   children?: React.ReactNode;
 }) => {
+  const pathname = useLocation();
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p
+      <motion.a
+        href={url}
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white"
+        className={`cursor-pointer hover:opacity-[0.9] dark:text-white ${
+          pathname.hash === url ? "text-[rgb(172,106,255)]" : "text-white"
+        }`}
       >
         {item}
-      </motion.p>
+      </motion.a>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
