@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Section from "./section";
 import Button from "./button";
 import { curve, robot } from "../assets";
@@ -7,26 +7,6 @@ import CompanyLogos from "./companyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    (async () => {
-      const response = await fetch(
-        "https://api.sepehr360.ir/api/Taghvim/Parvaz/Oneway/SafehateOmomi/GetGheymatTaghvimShamsi/Desktop",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            destinationIataCode: "MHD",
-            originIataCode: "THR,IKA,PYK",
-            selectedDate: "1403-02-03",
-          }),
-        }
-      );
-      const data = await response.json();
-      console.log(data);
-    })();
-  }, []);
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
